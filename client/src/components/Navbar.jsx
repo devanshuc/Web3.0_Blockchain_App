@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
