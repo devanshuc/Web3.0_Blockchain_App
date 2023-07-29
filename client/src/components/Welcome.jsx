@@ -1,6 +1,7 @@
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from "react-icons/si";
 import { BsInfoCircle } from "react-icons/bs";
+import Input from "./UI/Input";
 
 import { Loader } from "./";
 
@@ -55,7 +56,32 @@ const Welcome = () => {
 							</div>
 						</div>
 					</div>
-					<div className="p-5 sm:w-96 w-full flex-col justify-start items-center blue-glassmorphism"></div>
+					<div className="p-5 sm:w-96 w-full flex-col justify-start items-center blue-glassmorphism">
+						<Input
+							placeholder="Address To"
+							name="addressTo"
+							type="text"
+							handleChange={() => {}}
+						/>
+						<Input
+							placeholder="Amount (ETH)"
+							name="amount"
+							type="number"
+							handleChange={() => {}}
+						/>
+						<Input
+							placeholder="Keyword (GIF)"
+							name="keyword"
+							type="text"
+							handleChange={() => {}}
+						/>
+						<Input
+							placeholder="Enter Message"
+							name="message"
+							type="text"
+							handleChange={() => {}}
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
