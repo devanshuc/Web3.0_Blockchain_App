@@ -10,6 +10,8 @@ const Welcome = () => {
 		"min-h-[70px] sm:px-0 px-2 flex justify-center items-center border-[0.5px] border-gray-400 text-sm font-light text-white";
 	const connectWallet = () => {};
 
+	const handleSubmit = () => {};
+
 	return (
 		<div className="flex w-full justify-center items-center">
 			<div className="flex md:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
@@ -81,6 +83,19 @@ const Welcome = () => {
 							type="text"
 							handleChange={() => {}}
 						/>
+						<div className="h-[1px] w-full bg-gray-400 my-2" />
+
+						{false ? (
+							<Loader />
+						) : (
+							<button
+								className="text-white w-full mt-2 border-[1px] p-2 border=[#3d47fc] rounded-full cursor-pointer hover:bg-slate-500"
+								type="button"
+								onClick={handleSubmit}
+							>
+								Send Now
+							</button>
+						)}
 					</div>
 				</div>
 			</div>
